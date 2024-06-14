@@ -1,0 +1,95 @@
+// number 1
+public class StudentGenderAge{ 
+
+public static List<Student> filterStudentsByGender (List<Student> student, String Gender){
+    return student.stream()
+    .filter(student -> student.getGender().equalsIgnoreCase(gender))
+    .toList
+}
+
+//number 2
+
+public static List<Student> sortStudentsByAge(List<student> Students)
+LocalDate currentDate = LocalDate.now();
+Students.forEach(student ->{
+    LocalDate dob = student.getDob();
+    Period period = period.between(dob, LocalDate);
+    student.setAge(period.getYears());
+})
+return student.stream()
+.sorted(Comparator.comparing(Student::getAge))
+.toList
+}
+
+//number 3
+
+public static Integer AverageAge(List<Student> Students){
+Integer averageAge = Students.stream().mapToInteger(Integer::intValue).average();
+return averageAge;
+}
+
+// number 4
+
+public static List<String> names(List<Student> Students){
+ String getNames = Students.stream().map(x -> x.getFirst_Name + x.getLast_Name).toList();
+ return names.stream(); 
+}
+
+//number 5
+
+public static List<String> sortedStudentsByGender(List<Student> Students){
+String getGender = Students.stream().map(x -> x.gender + x.sortedStudentsByGender).toList();
+return sortedStudentsByGender;
+}
+
+// number 6
+
+public static Integer maximumAge(List<Student> Students){
+Integer maximumAge = Student.stream().mapToInteger(Integer::intValue).maximumAge()
+return maximumAge;
+}
+
+// number 7
+
+public class MapSkill{
+
+public static void main(String[] args){
+ Map<Integer, String> studentsById = new HashMap<>();
+ 
+ studentsById.put(111756, "Thomas");
+ studentsById.put(222657, "Omar");
+ studentsById.put(333567, "Charles");
+ studentById.put(444765, "Alphanso");
+ studentById.put(555123, "Bhavani");
+ studentById.put(666213, "Nick");
+ studentsById.put(777321, "Sam");
+
+ boolean hasThomas = map.containsValue("Thomas");
+ boolean hasOmar = map.containskey(222657);
+
+ Set<Integer> keys = map.keySet();
+ 
+ Collection<String>  Values = map.Values();
+}    
+}
+ 
+// number 8 
+ public static String getStudentsEmail(List<Student> Students){
+ String student = Student.stream().map(x -> x.getStudentsEmail).toList();
+ return getStudentsEmail;
+ }
+
+ // mnumber 9
+
+ public static Integer oldestStudent(List<Student> Students){
+    Integer oldestStudent = Student.stream().mapToInteger(x -> x.oldestStudent (i = 0; i < 18; i++)).toList()
+    return oldestStudent;
+ }
+
+ // number 10
+
+ public static Integer genderNumber(List<Student> Students){
+    Integer getGender = genderNumber.stream().mapToInteger(x -> x.getGender)
+ }
+
+
